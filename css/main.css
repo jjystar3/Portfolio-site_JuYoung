@@ -68,12 +68,12 @@ img, video {
   color: #333;
 }
 .btn.btn--brown {
-  color: red;
-  border-color: red;
+  color: royalblue;
+  border-color: royalblue;
 }
 .btn.btn--brown:hover {
   color: #fff;
-  background-color: red;
+  background-color: royalblue;
 }
 
 /* HEADER */
