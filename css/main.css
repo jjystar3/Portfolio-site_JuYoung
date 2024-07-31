@@ -43,7 +43,7 @@ img, video {
   margin-bottom: 50px;
 }
 .title::after {
-  content: ""; /* 필수 속성 */
+  content: "";
   display: block;
   width: 80px;
   height: 2px;
@@ -84,7 +84,7 @@ header {
   left: 0;
   z-index: 9;
 }
-header > .inner {
+header .inner {
   width: 100px;
   height: 100%;
 }
@@ -106,6 +106,10 @@ header nav ul li {
   padding: 20px 10px;
   font-weight: 700;
   transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav ul li a:hover {
   color: royalblue;
@@ -156,6 +160,15 @@ header nav ul li a:hover {
 }
 .header_contact.active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+ul .active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 20px;
+  background-color: #eee;
 }
 
 /* VISUAL */
