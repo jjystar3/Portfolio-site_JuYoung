@@ -256,7 +256,10 @@ ul .active::after {
   background-color: royalblue;
 }
 .main_work:hover span{
-  animation: shake-hard 0.5s infinite linear;
+  animation: bounce 0.5s; 
+  animation-direction: alternate; 
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+  animation-iteration-count: infinite; 
 }
 .main_work span {
   vertical-align: middle;
@@ -264,14 +267,14 @@ ul .active::after {
   font-size: 20px;
   text-shadow: 2px 2px #07090a;
 }
-@keyframes shake-hard {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(2px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
-}
-
+@keyframes bounce { 
+  from { 
+      transform: translateY(-5px);; 
+  } 
+  to { 
+      transform: translateY(5px); 
+  } 
+} 
 /* ABOUT */
 .about {
   height: 100vh;  
