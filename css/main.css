@@ -255,11 +255,21 @@ ul .active::after {
 .main_work:hover{
   background-color: royalblue;
 }
+.main_work:hover span{
+  animation: shake-hard 0.5s infinite linear;
+}
 .main_work span {
   vertical-align: middle;
   margin-left: 10px;
   font-size: 20px;
   text-shadow: 2px 2px #07090a;
+}
+@keyframes shake-hard {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(2px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
 }
 
 /* ABOUT */
