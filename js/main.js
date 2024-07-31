@@ -30,11 +30,12 @@ new ScrollMagic.Scene({triggerElement: "#contact"})
   .setClassToggle(".header_contact", "active")
   .addTo(controller);
 
-// 모달창 띄우기
 let modalBtn = document.querySelectorAll('.port .btn-modal');
+
 let modal1El = document.querySelector('#modal1');
 let closeBtn1 = document.querySelector('#modal1 .btn-close');
 let video1 = document.querySelector('#video1');
+
 let modal2El = document.querySelector('#modal2');
 let closeBtn2 = document.querySelector('#modal2 .btn-close');
 let video2 = document.querySelector('#video2');
@@ -58,30 +59,19 @@ closeBtn2.addEventListener('click', function () {
   video2.currentTime = 0;
 });
 
-// 현재 연도 표시
-// 날짜 정보를 가진 JS의 Date 객체를 활용
-new Date().getFullYear(); // 현재 연도 정보가 숫자 데이터로 반환됨
+new Date().getFullYear();
 console.log(new Date().getFullYear());
 
 let thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 
-// 페이지 최상단으로 이동
 let toTopBtn = document.querySelector('#to-top');
 
-// 페이지에 스크롤 이벤트 감지를 추가
-// window: 브라우저 창 객체
 window.addEventListener('scroll', function () {
-  // console.log(window.scrollY); // y축 스크롤 위치
-
-  // 페이지 스크롤 위치가 500px을 넘으면 요소를 보이고,
-  // 500px을 넘지 않으면 요소 숨기기
   if(window.scrollY > 500){
-    // toTopBtn.style.display = 'flex';
     toTopBtn.style.opacity = 1;
     toTopBtn.style.transform = 'translateX(0)';
   }else{
-    // toTopBtn.style.display = 'none';
     toTopBtn.style.opacity = 0;
     toTopBtn.style.transform = 'translateX(100px)';
   }
