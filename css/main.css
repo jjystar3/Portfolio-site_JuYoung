@@ -205,13 +205,18 @@ ul .active::after {
 
 /* MAIN */
 .main {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main.show {
+.main .inner{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.show .main__text {
   animation: shake 1s;
 }
 @keyframes shake {
@@ -236,11 +241,30 @@ ul .active::after {
   font-weight: bold;
   font-size: 45px;
 }
+.main_work {
+  position: absolute;
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  bottom: -100px;
+  background-color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main_work:hover{
+  background-color: royalblue;
+}
+.main_work span {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 20px;
+  text-shadow: 2px 2px #07090a;
+}
 
 /* ABOUT */
 .about {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,8 +356,7 @@ ul .active::after {
 
 /* SKILL */
 .skill {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,8 +419,7 @@ ul .active::after {
 
 /* WORK */
 .work {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,8 +480,7 @@ ul .active::after {
 
 /* CONTACT */
 .contact {
-  height: 100vh;
-  
+  height: 100vh;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,7 +506,6 @@ ul .active::after {
 .contact.show .contact__info li {
   opacity: 1;
   transform: translateX(0px);
-
 }
 .contact .contact__sns {
   margin-top: 20px;
