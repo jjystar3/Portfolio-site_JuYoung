@@ -232,12 +232,12 @@ ul .active a:hover::after {
 }
 .main_text .main-name {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
 }
 .main_text h3 {
   margin-top: 20px;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 45px;
 }
 .main_work {
   position: absolute;
@@ -284,7 +284,7 @@ ul .active a:hover::after {
   position: relative;
 }
 .about .about_wrapper .about_img {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 .flip-card {
@@ -337,11 +337,11 @@ ul .active a:hover::after {
 .about .about_wrapper .about_text .slogan {
   text-align: center;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
 }
 .about .about_wrapper .about_text h3 {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 .about .about_wrapper .about_text h4 {
