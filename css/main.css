@@ -92,6 +92,9 @@ header .logo img {
   width: 80px;
   margin: 0 auto;
 }
+header .logo img:hover {
+  filter: invert(1);
+}
 header nav {
   height: calc(100% - 80px);
 }
