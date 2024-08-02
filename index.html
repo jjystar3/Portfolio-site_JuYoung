@@ -24,248 +24,250 @@
 </head>
 <body>
   
-  <!-- HEADER -->
-  <header>
-    <div class="inner">
-      <div class="header_logo">
-        <a href="#" class="logo">
-          <img src="images/logo_jjy.png" alt="로고">
+  <div style="overflow-x: hidden;">
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <div class="header_logo">
+          <a href="#" class="logo">
+            <img src="images/logo_jjy.png" alt="로고">
+          </a>
+        </div>
+
+        <nav class="font-en">
+          <ul>
+            <li class="header_about"><a href="#about">ABOUT</a></li>
+            <li class="header_skill"><a href="#skill">SKILL</a></li>
+            <li class="header_work"><a href="#work">WORK</a></li>
+            <li class="header_contact"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- VISUAL -->
+    <!-- 유효성 검사시 warning을 없에기 위해 section을 div로 변경 -->
+    <div class="visual"> 
+      <div class="bg-img">
+        <div class="bg-day">
+          <img src="images/city_day.png" alt="낮">
+        </div>
+        <div class="bg-night">
+          <img src="images/city_night.png" alt="밤">
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <section id="main" class="main scroll-spy">
+      <div class="inner">
+        <div class="main_text">
+          <strong class="main-name">[ 정주용 ]</strong>
+          <h3>풀스택 개발자 포트폴리오</h3>
+        </div>
+        <a class="main_work" href="#work">
+          <span>작업 보기</span>
+          <span class="material-symbols-outlined">arrow_downward</span>
         </a>
       </div>
+    </section>
 
-      <nav class="font-en">
-        <ul>
-          <li class="header_about"><a href="#about">ABOUT</a></li>
-          <li class="header_skill"><a href="#skill">SKILL</a></li>
-          <li class="header_work"><a href="#work">WORK</a></li>
-          <li class="header_contact"><a href="#contact">CONTACT</a></li>
+    <!-- ABOUT -->
+    <section id="about" class="about scroll-spy">
+      <div class="inner">
+        <h2 class="title font-en">ABOUT</h2>
+        <div class="about_wrapper">
+
+          <div class="about_img">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/logo_jjy.png" alt="프로필 앞">
+                </div>
+                <div class="flip-card-back">
+                  <img src="images/profile_jjy.png" alt="프로필 뒤">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about_text">
+            <strong class="slogan">"항상 창작하는 개발자"</strong>
+            <h3 class="font-en">Jeong Ju Young</h3>
+            <div>
+              <h4 class="font-en">EDUCATION</h4>
+              <ul>
+                <li>10.03 ~ 12.02 00학교 00과 졸업</li>
+                <li>24.06 ~ 24.12 풀스택 개발자 과정 수료</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="about_btn font-en">
+          <a href="#contact">
+            <img src="images/icon/icon_contact.png" alt="전화">CONTACT
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill" class="skill scroll-spy">
+      <div class="inner">
+        <h2 class="title font-en">SKILL</h2>
+        <ul class="skill_list">
+          <li>
+            <div>
+              <div>
+                <img src="images/icon/skill/Photoshop.svg" alt="포토샵">
+              </div>
+              <h3 class="font-en">Photoshop</h3>
+              <ul>
+                <li>일러스트</li>
+                <li>텍스쳐</li>
+                <li>사진 편집</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <img src="images/icon/skill/Animate.svg" alt="애니메이트">
+              </div>
+              <h3 class="font-en">Animate</h3>
+              <ul>
+                <li>2D 애니메이션 제작</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <img src="images/icon/skill/blender.svg" alt="블렌더">
+              </div>
+              <h3 class="font-en">Blender</h3>
+              <ul>
+                <li>건축, 인체 3D 모델링</li>
+                <li>텍스처링, 리깅</li>
+                <li>애니메이션</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <img src="images/icon/skill/Unity.svg" alt="유니티">
+              </div>
+              <h3 class="font-en">Unity</h3>
+              <ul>
+                <li>2D, 3D 게임 기획</li>
+                <li>프로토타입, 프로젝트 제작</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <img src="images/icon/skill/C_sharp.svg" alt="C#">
+              </div>
+              <h3 class="font-en">C# Programing</h3>
+              <ul>
+                <li>유니티 중점 프로그래밍</li>
+                <li>게임 로직 구현</li>
+              </ul>
+            </div>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </section>
 
-  <!-- VISUAL -->
-  <!-- 유효성 검사시 warning을 없에기 위해 section을 div로 변경 -->
-  <div class="visual"> 
-    <div class="bg-img">
-      <div class="bg-day">
-        <img src="images/city_day.png" alt="낮">
+    <!-- WORK -->
+    <section id="work" class="work font-en scroll-spy">
+      <div class="inner">
+        <h2 class="title">WORK</h2>
+        <div class="port">
+          <div class="port_video" style="transition-delay: 0.1s;">
+            <video autoplay muted loop>
+              <source src="videos/work1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="port_text" style="transition-delay: 0.1s;">
+            <h3>유니티 프로토타입 1</h3>
+            <ul>
+              <li><span>주요 기능 : </span>플레이어를 제외한 모든 사물의 시간을 늦추는 능력 구현</li>
+              <li><span>적용 기술 : </span>C#, Unity</li>
+              <li><span>GitHub : </span>깃허브 주소</li>
+              <li><span>URL : </span>배포 주소</li>
+            </ul>
+            <div class="btn-group">
+              <a href="javascript:void(0)" target="_blank" class="btn">README</a>
+              <a href="javascript:void(0)" class="btn btn-brown btn-modal">DETAIL</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port_video" style="transition-delay: 0.4s;">
+            <video autoplay muted loop>
+              <source src="videos/work2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="port_text" style="transition-delay: 0.4s;">
+            <h3>유니티 프로토타입 2</h3>
+            <ul>
+              <li><span>주요 기능 : </span>젤다의 전설 게임의 한 레벨을 똑같이 제현해보는 프로젝트</li>
+              <li><span>적용 기술 : </span>C#, Unity, Photoshop, Blender</li>
+              <li><span>GitHub : </span>깃허브 주소</li>
+              <li><span>URL : </span>배포 주소</li>
+            </ul>
+            <div class="btn-group">
+              <a href="javascript:void(0)" target="_blank" class="btn">README</a>
+              <a href="javascript:void(0)" class="btn btn-brown btn-modal">DETAIL</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-night">
-        <img src="images/city_night.png" alt="밤">
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact font-en scroll-spy">
+      <div class="inner">
+        <h2 class="title">CONTACT</h2>
+        <div class="contact_info">
+          <ul>
+            <li><a href="https://github.com/jjystar3">github.com/jjystar3</a></li>
+            <li>010-1234-5678</li>
+            <li>jjystar3@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contact_sns">
+          <ul>
+            <li>
+              <a href="인스타그램" target="_blank">
+                <img src="images/icon/icon_insta.png" alt="인스타그램">
+              </a>
+            </li>
+            <li>
+              <a href="유튜브" target="_blank">
+                <img src="images/icon/icon_youtube.png" alt="유튜브">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <p class="copyright">
+          &copy; <span class="this-year"></span>
+          정주용. <span class="font-en">All Rights Reserved.</span>
+        </p>
+      </div>
+    </footer>
   </div>
-
-  <!-- MAIN -->
-  <section id="main" class="main scroll-spy">
-    <div class="inner">
-      <div class="main_text">
-        <strong class="main-name">[ 정주용 ]</strong>
-        <h3>풀스택 개발자 포트폴리오</h3>
-      </div>
-      <a class="main_work" href="#work">
-        <span>작업 보기</span>
-        <span class="material-symbols-outlined">arrow_downward</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about scroll-spy">
-    <div class="inner">
-      <h2 class="title font-en">ABOUT</h2>
-      <div class="about_wrapper">
-
-        <div class="about_img">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/logo_jjy.png" alt="프로필 앞">
-              </div>
-              <div class="flip-card-back">
-                <img src="images/profile_jjy.png" alt="프로필 뒤">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="about_text">
-          <strong class="slogan">"항상 창작하는 개발자"</strong>
-          <h3 class="font-en">Jeong Ju Young</h3>
-          <div>
-            <h4 class="font-en">EDUCATION</h4>
-            <ul>
-              <li>10.03 ~ 12.02 00학교 00과 졸업</li>
-              <li>24.06 ~ 24.12 풀스택 개발자 과정 수료</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="about_btn font-en">
-        <a href="#contact">
-          <img src="images/icon/icon_contact.png" alt="전화">CONTACT
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILL -->
-  <section id="skill" class="skill scroll-spy">
-    <div class="inner">
-      <h2 class="title font-en">SKILL</h2>
-      <ul class="skill_list">
-        <li>
-          <div>
-            <div>
-              <img src="images/icon/skill/Photoshop.svg" alt="포토샵">
-            </div>
-            <h3 class="font-en">Photoshop</h3>
-            <ul>
-              <li>일러스트</li>
-              <li>텍스쳐</li>
-              <li>사진 편집</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div>
-              <img src="images/icon/skill/Animate.svg" alt="애니메이트">
-            </div>
-            <h3 class="font-en">Animate</h3>
-            <ul>
-              <li>2D 애니메이션 제작</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div>
-              <img src="images/icon/skill/blender.svg" alt="블렌더">
-            </div>
-            <h3 class="font-en">Blender</h3>
-            <ul>
-              <li>건축, 인체 3D 모델링</li>
-              <li>텍스처링, 리깅</li>
-              <li>애니메이션</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div>
-              <img src="images/icon/skill/Unity.svg" alt="유니티">
-            </div>
-            <h3 class="font-en">Unity</h3>
-            <ul>
-              <li>2D, 3D 게임 기획</li>
-              <li>프로토타입, 프로젝트 제작</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div>
-              <img src="images/icon/skill/C_sharp.svg" alt="C#">
-            </div>
-            <h3 class="font-en">C# Programing</h3>
-            <ul>
-              <li>유니티 중점 프로그래밍</li>
-              <li>게임 로직 구현</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section id="work" class="work font-en scroll-spy">
-    <div class="inner">
-      <h2 class="title">WORK</h2>
-      <div class="port">
-        <div class="port_video" style="transition-delay: 0.1s;">
-          <video autoplay muted loop>
-            <source src="videos/work1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="port_text" style="transition-delay: 0.1s;">
-          <h3>유니티 프로토타입 1</h3>
-          <ul>
-            <li><span>주요 기능 : </span>플레이어를 제외한 모든 사물의 시간을 늦추는 능력 구현</li>
-            <li><span>적용 기술 : </span>C#, Unity</li>
-            <li><span>GitHub : </span>깃허브 주소</li>
-            <li><span>URL : </span>배포 주소</li>
-          </ul>
-          <div class="btn-group">
-            <a href="javascript:void(0)" target="_blank" class="btn">README</a>
-            <a href="javascript:void(0)" class="btn btn-brown btn-modal">DETAIL</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="port">
-        <div class="port_video" style="transition-delay: 0.4s;">
-          <video autoplay muted loop>
-            <source src="videos/work2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="port_text" style="transition-delay: 0.4s;">
-          <h3>유니티 프로토타입 2</h3>
-          <ul>
-            <li><span>주요 기능 : </span>젤다의 전설 게임의 한 레벨을 똑같이 제현해보는 프로젝트</li>
-            <li><span>적용 기술 : </span>C#, Unity, Photoshop, Blender</li>
-            <li><span>GitHub : </span>깃허브 주소</li>
-            <li><span>URL : </span>배포 주소</li>
-          </ul>
-          <div class="btn-group">
-            <a href="javascript:void(0)" target="_blank" class="btn">README</a>
-            <a href="javascript:void(0)" class="btn btn-brown btn-modal">DETAIL</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact font-en scroll-spy">
-    <div class="inner">
-      <h2 class="title">CONTACT</h2>
-      <div class="contact_info">
-        <ul>
-          <li><a href="https://github.com/jjystar3">github.com/jjystar3</a></li>
-          <li>010-1234-5678</li>
-          <li>jjystar3@gmail.com</li>
-        </ul>
-      </div>
-      <div class="contact_sns">
-        <ul>
-          <li>
-            <a href="인스타그램" target="_blank">
-              <img src="images/icon/icon_insta.png" alt="인스타그램">
-            </a>
-          </li>
-          <li>
-            <a href="유튜브" target="_blank">
-              <img src="images/icon/icon_youtube.png" alt="유튜브">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="inner">
-      <p class="copyright">
-        &copy; <span class="this-year"></span>
-        정주용. <span class="font-en">All Rights Reserved.</span>
-      </p>
-    </div>
-  </footer>
 
   <!-- MODAL -->
   <div id="modal1">
